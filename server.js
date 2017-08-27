@@ -59,6 +59,7 @@ var anime ={
             the world were created.
             </p>`
     }
+};    
 
 function createTemplate(data) {
     var title= data.title;
