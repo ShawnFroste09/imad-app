@@ -93,16 +93,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/page1', function (req, res) {
-  res.send(createTemplate(CodeGeass));
-});
-
-app.get('/page2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
-});
-
-app.get('/page3', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
+app.get('/:animeName', function (req, res) {
+  var animeName= req.params.animeNae
+  res.send(createTemplate(anime[animeName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
