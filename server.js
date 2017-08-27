@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var anime ={
-    CodeGeass:{
+    'CodeGeass':{
         title:'Code Geass',
         heading:'Code Geass',
         content:` 
@@ -21,7 +21,7 @@ var anime ={
                 superpower that has been conquering various countries.
             </p> `
     },
-    DeathNote: {
+    'DeathNote': {
         title:'Death Note',
         heading:'Death Note',
         content:` <p>
@@ -34,7 +34,7 @@ var anime ={
                 him.
             </p>`
     },
-    TokyoGhoul:{
+    'TokyoGhoul':{
          title:'Tokyo Ghoul',
         heading:'Tokyo Ghoul',
         content:`
@@ -94,7 +94,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:animeName', function (req, res) {
-  var animeName= req.params.animeNae
+  var animeName= req.params.animeName;
   res.send(createTemplate(anime[animeName]));
 });
 
