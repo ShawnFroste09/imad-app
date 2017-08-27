@@ -5,21 +5,29 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var CodeGeass={
-    title:'Code Geass',
-    heading:'Code Geass',
-    content:` 
-        <p>
-            Code Geass: Lelouch of the Rebellion often referred to as simply 
-            Code Geass, is a Japanese anime series created by Sunrise, 
-            directed by Gorō Taniguchi, and written by Ichirō Ōkouchi, with        
-            original character designs by manga authors Clamp. Set in an 
-            alternate timeline, the series focuses on how the 
-            former prince Lelouch vi Britannia obtains a power known as Geass 
-            and decides to use it to obliterate the Holy Britannian Empire, a 
-            superpower that has been conquering various countries.
-        </p> `
-}
+var anime ={
+    
+    CodeGeass:{
+        title:'Code Geass',
+        heading:'Code Geass',
+        content:` 
+            <p>
+                Code Geass: Lelouch of the Rebellion often referred to as simply 
+                Code Geass, is a Japanese anime series created by Sunrise, 
+                directed by Gorō Taniguchi, and written by Ichirō Ōkouchi, with        
+                original character designs by manga authors Clamp. Set in an 
+                alternate timeline, the series focuses on how the 
+                former prince Lelouch vi Britannia obtains a power known as Geass 
+                and decides to use it to obliterate the Holy Britannian Empire, a 
+                superpower that has been conquering various countries.
+            </p> `
+    },
+    DeathNote: {
+         title:'Death Note',
+        heading:'Death Note',
+        content:` 
+    },
+    TokyoGhoul:{}
 
 function createTemplate(data) {
     var title= data.title;
