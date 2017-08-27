@@ -54,7 +54,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/page1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
+  res.send(createTemplate(CodeGeass));
 });
 
 app.get('/page2', function (req, res) {
