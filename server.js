@@ -14,11 +14,11 @@ app.get('/page1', function (req, res) {
 });
 
 app.get('/page2', function (req, res) {
-  res.send('Page2 will be served here');
+  res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
 });
 
 app.get('/page3', function (req, res) {
-  res.send('Page3 will be served here');
+  res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
