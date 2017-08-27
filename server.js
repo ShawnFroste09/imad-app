@@ -22,7 +22,7 @@ var CodeGeass={
 }
 
 function createTemplate(data) {
-var htmlTemplate:`
+var htmlTemplate=`
 <html>
   <head>
     <title>
