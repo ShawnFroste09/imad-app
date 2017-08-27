@@ -23,11 +23,43 @@ var anime ={
             </p> `
     },
     DeathNote: {
-         title:'Death Note',
+        title:'Death Note',
         heading:'Death Note',
-        content:` 
+        content:` <p>
+                Death Note is a Japanese manga series written by Tsugumi Ohba and illustrated 
+                by Takeshi Obata. The story follows Light Yagami, a high school student who 
+                discovers a supernatural notebook from a Shinigami named Ryuk that grants its 
+                user the ability to kill anyone whose name and face he knows. The series 
+                centers around Light's attempts to create and rule a world "cleansed of evil" 
+                as "God" using the notebook, and the efforts of a detective known as L to stop 
+                him.
+            </p>`
     },
-    TokyoGhoul:{}
+    TokyoGhoul:{
+         title:'Tokyo Ghoul',
+        heading:'Tokyo Ghoul',
+        content:`
+            <p>
+            Tokyo Ghoul is set in an alternate reality where ghouls, individuals who 
+            can only survive by eating human flesh, live among the normal humans in 
+            secret, hiding their true nature to evade pursuit from the authorities. 
+            Including enhanced speed, senses, and regenerative ability, a regular 
+            ghoul is several times stronger than a normal human, has a skin resistant 
+            to ordinary piercing weapons and has at least one special predatory organ 
+            called a "Kagune", which it can manifest and use as a weapon during combat
+            . Another distinctive trait of ghouls is that when they are excited the 
+            color of their sclera in both eyes turns black and their irises red. In 
+            the case of a half-ghoul, only one of the eyes undergoes the 
+            transformation. A half-ghoul can either be born naturally as a ghoul and a
+            human's offspring, or artificially created by transplanting some 
+            ghoul organs into a human. In both cases, a half-ghoul is usually much 
+            strongerthan a pure-blood ghoul. There is also the case of half-humans, 
+            hybrids of ghouls and humans that can feed like normal humans and lack a 
+            Kagune while possessing enhanced abilities, but shortened lifespans. To 
+            hunt down the ghouls , several government-sponsored organizations around 
+            the world were created.
+            </p>`
+    }
 
 function createTemplate(data) {
     var title= data.title;
